@@ -666,6 +666,17 @@ footer {
     visibility: visible;
     right: 30px;
 }
+ .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo img {
+            height: auto; /* Increased logo size */
+            width: 180px;
+            transition: var(--transition);
+        }
 
 /* Responsive Styles */
 @media (max-width: 992px) {
@@ -679,6 +690,9 @@ footer {
     
     .hero h1 {
         font-size: 2.8rem;
+    }
+    .logo img {
+        height: 50px;
     }
 }
 
@@ -737,6 +751,9 @@ footer {
     .page-navigation {
         display: none;
     }
+    .logo img {
+        height: 45px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -750,5 +767,8 @@ footer {
     
     .section-title h2 {
         font-size: 1.8rem;
+    }
+    .logo img {
+        height: 40px;
     }
 }
